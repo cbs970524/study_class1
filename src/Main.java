@@ -3,6 +3,5 @@ public class Main {
         BroadcastTeam GMBS = new BroadcastTeam();
         GMBS.addNewMember("최범식");
         GMBS.addNewMember("홍길동");
-        GMBS.showMember();
     }
 }
