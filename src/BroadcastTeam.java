@@ -38,10 +38,34 @@ public class BroadcastTeam {
     void fixComputer(String computer){
         System.out.println(computer+"를 수리하였습니다");
     }
-    void buy(String tool, String modelName){
-
+    void buyCamera(String camera){
+        this.camera.add(camera);
     }
-    void showMember(){
-
+    void throwCamera(String camera){
+        this.camera.remove(camera);
+    }
+    void fixCamera(String camera){
+        System.out.println(camera+"를 수리하였습니다.");
+    }
+    void buySpeaker(String speaker){
+        this.speaker.add(speaker);
+    }
+    void throwSpeaker(String spaker){
+        this.speaker.remove(spaker);
+    }
+    void fixSpeaker(String speaker){
+        System.out.println(speaker + "를 수리했습니다.");
+    }
+    void buyMic(String mic){
+        this.mic.add(mic);
+    }
+    void throwMic(String mic){
+        this.mic.remove(mic);
+    }
+    void fixMic(String mic){
+        System.out.println(mic + "를 수리했습니다.");
+    }
+    void showInfo(){
+        System.out.println("방송부의 인원은 "+member+"가 있으며 장비는 "+camera+speaker+mic+computer + "가 있습니다.");
     }
 }
